@@ -9,11 +9,8 @@
     <h:body>
         Hello from Facelets
         <h:form>
-        <h:inputText value="#{indexController.world}" />
-        <br>
-            <h:inputText value="#{indexController.name}"/>
-            <br>
-                <h:commandButton actionListener=""
+        <h:inputText value="#{indexController.name}"/>
+                <h:commandButton actionListener="#{indexController.eventoClick()}" value="Incrementar" />
           </h:form>
     </h:body>
 </html>

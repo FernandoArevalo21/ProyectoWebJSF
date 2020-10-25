@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Clase encargada de contener la parte logica del codigo
  */
 
 import java.awt.event.ActionEvent;
@@ -12,27 +10,32 @@ import javax.faces.event.AbortProcessingException;
 
 /**
  *
- * @author usuario
+ * @author Fernando Arévalo
+ * @author Johan Andres Sanchez
  */
 @Named(value = "indexController")
 @RequestScoped
 public class IndexController {
        /**
-     * Creates a new instance of IndexController
+     * Se crea la variable name que es un String
      */
 private String name;
+/**
+     * Se crea la variable numero que es un String
+     */
 private String numero;
-        //= "Universidad De Cundinamarca";
   
     public IndexController() {
     }
-    public String outcome(){
-        
-        return "result";
-    }
+    /**
+     * Se crea el metodo eventoClick
+     */
     public void eventoClick(){
         System.out.println("Nombre: "+this.name);
     }
+    /**
+     * Se crea el metodo Click para el ActionEvent
+     */
     public void click(ActionEvent ae){
         System.out.println("Número:"+this.numero);
     }

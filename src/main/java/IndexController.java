@@ -18,11 +18,15 @@ public class IndexController {
      * Creates a new instance of IndexController
      */
 private String world ;
+private String name;
         //= "Universidad De Cundinamarca";
   
  
     public IndexController() {
         System.out.println(world);
+    }
+    public void eventoClick(){
+        System.out.println("Nombre"+this.name);
     }
 
     public String getWorld() {
@@ -32,6 +36,15 @@ private String world ;
     public void setWorld(String world) {
         this.world = world;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     public void actionListener() {
         // Poll stock ticker service and get the data for the requested symbol.
         this.info= "" + System.currentTimeMillis();

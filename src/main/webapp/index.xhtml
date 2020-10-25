@@ -10,8 +10,10 @@
         Hello from Facelets
         <h:form>
         <h:inputText value="#{indexController.world}" />
-          <input type="submit" jsf:id="submitButton" value="submit" jsf:actionListener="#
-{indexController.actionListener}"/>
+        <br>
+            <h:inputText value="#{indexController.name}"/>
+            <br>
+                <h:commandButton actionListener=""
           </h:form>
     </h:body>
 </html>

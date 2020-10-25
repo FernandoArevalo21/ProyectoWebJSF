@@ -4,8 +4,11 @@
  * and open the template in the editor.
  */
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
+import javax.faces.event.AbortProcessingException;
 
 /**
  *
@@ -19,7 +22,7 @@ public class IndexController {
      */
 private String world ;
 private String name;
-private String incremental;
+private String message;
         //= "Universidad De Cundinamarca";
   
  
@@ -46,8 +49,8 @@ private String incremental;
         this.name = name;
     }
     
-    public void actionListener() {
-        // Poll stock ticker service and get the data for the requested symbol.
+    public void actionListener(ActionEvent ae) {
+        // El metodo lo que hace es revisar las acciones y obtiene los datos solicitados
         this.info= "" + System.currentTimeMillis();
     }
     

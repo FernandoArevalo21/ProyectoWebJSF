@@ -19,14 +19,15 @@ public class IndexController {
      */
 private String world ;
 private String name;
+private String incremental;
         //= "Universidad De Cundinamarca";
   
  
     public IndexController() {
-        System.out.println(world);
+        
     }
     public void eventoClick(){
-        System.out.println("Nombre"+this.name);
+        System.out.println("Nombre: "+this.name);
     }
 
     public String getWorld() {

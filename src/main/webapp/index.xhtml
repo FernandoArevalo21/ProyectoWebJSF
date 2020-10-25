@@ -13,8 +13,11 @@
         <h:form>
             <h2 style="margin-left: 20px"> Action </h2>
             <h:inputText style="margin-left: 20px" value="#{indexController.name}"/>
-            <h:commandButton style="margin-left: 20px" action="#{indexController.eventoClick()}" value="Registrar" ></h:commandButton>
                 <h:outputText style="margin-left: 20px" value="${indexController.name}"/>
+                <h2 style="margin-left: 20px"> ActionListener </h2>
+                <h:inputText style="margin-left: 20px" value="#{indexController.numero}"/>
+                <h:commandButton style="margin-left: 20px" action="#{indexController.click(ae)}" value="Registrar Cuenta" ></h:commandButton>
+                <h:outputText style="margin-left: 20px" value="${indexController.numero}"/>
           </h:form>
     </h:body>
 </html>

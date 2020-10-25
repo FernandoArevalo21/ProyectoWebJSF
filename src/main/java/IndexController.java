@@ -20,38 +20,36 @@ public class IndexController {
        /**
      * Creates a new instance of IndexController
      */
-private String world ;
 private String name;
-private String message;
+private String numero;
         //= "Universidad De Cundinamarca";
   
- 
     public IndexController() {
+    }
+    public String outcome(){
         
+        return "result";
     }
     public void eventoClick(){
         System.out.println("Nombre: "+this.name);
     }
-
-    public String getWorld() {
-        return world;
+    public void click(ActionEvent ae){
+        System.out.println("Número:"+this.numero);
+    }
+    public String getNumero() {
+        return numero;
     }
 
-    public void setWorld(String world) {
-        this.world = world;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
-
+    
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-    
-    public void actionListener(ActionEvent ae) {
-        // El metodo lo que hace es revisar las acciones y obtiene los datos solicitados
-        this.info= "" + System.currentTimeMillis();
     }
     
     private String info;

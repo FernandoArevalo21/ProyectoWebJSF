@@ -12,13 +12,9 @@
         <h1 style="text-align: center">Action / ActionListener</h1>
         <h:form>
             <h2 style="margin-left: 20px"> Action </h2>
+            <h:outputText value="Ingrese el nombre de su contacto"/>
             <h:inputText style="margin-left: 20px" value="#{indexController.name}"/>
-                <h:outputText style="margin-left: 20px" value="${indexController.name}"/>
-                  <h:commandButton style="margin-left: 20px" action="#{indexController.eventoClick()}" value="Registrar" ></h:commandButton>
-                <h2 style="margin-left: 20px"> ActionListener </h2>
-                <h:inputText style="margin-left: 20px" value="#{indexController.numero}"/>
-                <h:commandButton style="margin-left: 20px" actionListener="#{indexController.click(ae)}" value="Registrar Cuenta" ></h:commandButton>
-                <h:outputText style="margin-left: 20px" value="${indexController.numero}"/>
+                  <h:commandButton style="margin-left: 20px" action="/index2" value="Siguiente" ></h:commandButton>
           </h:form>
     </h:body>
 </html>

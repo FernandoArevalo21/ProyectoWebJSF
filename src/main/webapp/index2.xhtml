@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <head>
+        <h2 style="margin-left: 20px"> ActionListener </h2>
+        <h:form>
+                <h:outputText value="Ingrese el número  de su contacto"/>
+                <h:inputText style="margin-left: 20px" value="#{indexController.numero}"/>
+                <h:commandButton style="margin-left: 20px" actionListener="#{indexController.click(ae)}" value="Registrar Contacto" ></h:commandButton>
+                <h:outputText style="margin-left: 20px" value="${indexController.name}"/>
+                <h:outputText style="margin-left: 20px" value="${indexController.numero}"/>
+                </h:form>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>

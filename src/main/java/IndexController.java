@@ -28,7 +28,7 @@ private String numero;
     public IndexController() {
     }
     /**
-     * Se crea el metodo eventoClick
+     * Se crea el metodo eventoClick con el actionListener
      */
     public void eventoClick(){
         System.out.println("Nombre: "+this.name);

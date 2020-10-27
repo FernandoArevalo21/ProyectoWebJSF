@@ -9,9 +9,10 @@ import javax.enterprise.context.RequestScoped;
 import javax.faces.event.AbortProcessingException;
 
 /**
- *
+ *@since 26/10/2020
  * @author Fernando Arévalo
  * @author Johan Andres Sanchez
+ * @version 1.0.0
  */
 @Named(value = "indexController")
 @RequestScoped
